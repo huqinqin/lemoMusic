@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<!--<script>
+  var obj = {0:{score:1,max:8},1:{score:3,max:5},2:{score:2,max:9}}
+
+  console.log(Object.keys(obj).sort(function (a,b) {
+    return obj[a].score - obj[b].score
+  }));
+</script>-->
+<script>
+  var objs = {
+    f: {
+      id: 2,
+      name: '2'
+    },
+    a: {
+      id: 3,
+      name: '3'
+    },
+    c: {
+      id: 1,
+      name: '1'
+    }
+  };
+  var sortedObjKeys = Object.keys(objs).sort(function(a, b) {
+    return objs[a].id - objs[b].id;
+  });
+  console.log(sortedObjKeys.map(function (value,index) {
+    return objs[value]
+  }));
+</script>
+</html>
